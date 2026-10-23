@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mekdim Tesfaye | Brand &amp; Communications Designer</title>
-<meta name="description" content="Portfolio of Mekdim Tesfaye, brand and communications designer based in South East Queensland.">
+<meta name="description" content="Portfolio of Mekdim Tesfaye, brand and communications designer with a technical, engineering-minded edge.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
 <style>
@@ -41,6 +41,14 @@ section{padding:5rem 0;border-bottom:1px solid var(--line)}
 .skills p{margin:0;color:var(--muted);font-size:.9rem}
 .contact ul{list-style:none;padding:0;margin:2rem 0 0;display:grid;gap:.75rem;font-size:1.1rem}
 footer{padding:2rem 0;color:var(--muted);font-size:.85rem}
+.layout{display:grid;grid-template-columns:240px 1fr;gap:2.5rem;max-width:1360px;margin:0 auto;padding:0 1.5rem}
+.layout main{min-width:0}.layout main .wrap{padding:0}
+.sidebar{position:sticky;top:60px;align-self:start;max-height:calc(100vh - 60px);overflow:auto;padding:2rem 1.25rem 2rem 0;border-right:1px solid var(--line)}
+.sidebar h3{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:1.4rem 0 .5rem}
+.sidebar ul{list-style:none;margin:0;padding:0;display:grid;gap:.45rem}
+.sidebar li{display:flex;align-items:center;gap:.6rem;font-size:.92rem}
+.sidebar img{width:20px;height:20px;object-fit:contain;flex:none}
+@media(max-width:900px){.layout{grid-template-columns:1fr;gap:0}.sidebar{order:2;position:static;max-height:none;border-right:0;border-top:1px solid var(--line);padding:2rem 0}.sidebar ul{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}}
 @media(max-width:720px){.nav ul{display:none}.about{grid-template-columns:1fr}section{padding:3.5rem 0}}
 </style>
 </head>
@@ -50,11 +58,12 @@ footer{padding:2rem 0;color:var(--muted);font-size:.85rem}
 <a class="brand" href="#top">Mekdim Tesfaye</a>
 <nav aria-label="Main"><ul><li><a href="#about">About</a></li><li><a href="#work">Work</a></li><li><a href="#video">Video</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li></ul></nav>
 </div></header>
+<div class="layout"><aside class="sidebar" aria-labelledby="tools-h"><p class="eyebrow" id="tools-h">Software</p><h3>Design</h3><ul><li><img src="assets/logos/canva.png" alt="" width="20" height="20" loading="lazy">Canva</li><li><img src="assets/logos/adobeillustrator.svg" alt="" width="20" height="20" loading="lazy">Adobe Illustrator</li><li><img src="assets/logos/adobeexpress.png" alt="" width="20" height="20" loading="lazy">Adobe Express</li><li><img src="assets/logos/fusion360.svg" alt="" width="20" height="20" loading="lazy">Fusion 360</li></ul><h3>Marketing &amp; CRM</h3><ul><li><img src="assets/logos/mailchimp.svg" alt="" width="20" height="20" loading="lazy">Mailchimp</li><li><img src="assets/logos/hubspot.svg" alt="" width="20" height="20" loading="lazy">HubSpot</li></ul><h3>Project management</h3><ul><li><img src="assets/logos/asana.svg" alt="" width="20" height="20" loading="lazy">Asana</li><li><img src="assets/logos/monday.svg" alt="" width="20" height="20" loading="lazy">Monday.com</li></ul><h3>AI tools</h3><ul><li><img src="assets/logos/claude.svg" alt="" width="20" height="20" loading="lazy">Claude</li><li><img src="assets/logos/googlegemini.svg" alt="" width="20" height="20" loading="lazy">Gemini</li><li><img src="assets/logos/chatgpt.svg" alt="" width="20" height="20" loading="lazy">ChatGPT</li></ul><h3>Web building</h3><ul><li><img src="assets/logos/webflow.svg" alt="" width="20" height="20" loading="lazy">Webflow</li><li><img src="assets/logos/shopify.svg" alt="" width="20" height="20" loading="lazy">Shopify</li><li><img src="assets/logos/wordpress.svg" alt="" width="20" height="20" loading="lazy">WordPress</li><li><img src="assets/logos/wix.svg" alt="" width="20" height="20" loading="lazy">Wix</li><li><img src="assets/logos/squarespace.svg" alt="" width="20" height="20" loading="lazy">Squarespace</li></ul><h3>Productivity</h3><ul><li><img src="assets/logos/microsoft365.svg" alt="" width="20" height="20" loading="lazy">Microsoft 365</li><li><img src="assets/logos/googleworkspace.svg" alt="" width="20" height="20" loading="lazy">Google Workspace</li></ul></aside>
 <main id="main">
 <section class="hero" id="top"><div class="wrap">
 <p class="eyebrow">Portfolio</p>
 <h1>Mekdim Tesfaye</h1>
-<p class="lead">Brand &amp; Communications Designer. A Kiwi in South East Queensland making clear, considered visual work for brands, campaigns and ideas.</p>
+<p class="lead">Brand &amp; Communications Designer. Marketing and design backed by hands-on technical skills in CAD, 3D printing and aerospace.</p>
 <div class="btns">
 <a class="btn primary" href="#work">View work</a>
 <a class="btn" href="#" aria-disabled="true">Download CV [link coming]</a>
@@ -67,8 +76,8 @@ footer{padding:2rem 0;color:var(--muted);font-size:.85rem}
 <div>
 <p class="eyebrow">About</p>
 <h2>Hi, I'm Mekdim.</h2>
-<p>I've spent around five years leading branding and communications for Aerospace New Zealand, working across graphic design, campaign material and video. Outside of that, I like building things: from CAD-designed, 3D-printed mounts to aerospace concepts and analysis.</p>
-<p>I'm a New Zealander now based in South East Queensland, and I'm open to freelance marketing, branding and design contracts. [Add a personal line here.]</p>
+<p>I bring a blend that's rare in marketing: brand and communications experience alongside real technical skills. I've spent around five years on branding and communications for Aerospace New Zealand, working across graphic design, campaign material and video.</p>
+<p>On the technical side, I design in CAD, prototype with 3D printing, and work on aerospace concepts and analysis. That means I can understand technical products and explain them clearly. I'm open to freelance marketing, branding and design contracts.</p>
 </div>
 </div></section>
 
@@ -108,12 +117,13 @@ footer{padding:2rem 0;color:var(--muted);font-size:.85rem}
 <section id="skills"><div class="wrap">
 <p class="eyebrow">Skills &amp; tools</p>
 <h2>What I work with</h2>
+<p class="lead">The disciplines behind the work. Software I use is listed in the sidebar.</p>
 <div class="skills">
-<div><h3>Graphic design</h3><p>[Tools, e.g. design software]</p></div>
+<div><h3>Graphic design</h3><p>Layout, print and digital assets</p></div>
 <div><h3>Branding</h3><p>Identity, guidelines, consistency</p></div>
 <div><h3>Communications</h3><p>Campaigns, content, messaging</p></div>
-<div><h3>Video</h3><p>[Editing tools]</p></div>
-<div><h3>CAD &amp; 3D printing</h3><p>[CAD software]</p></div>
+<div><h3>Video</h3><p>Editing and motion for comms</p></div>
+<div><h3>CAD &amp; 3D printing</h3><p>Product modelling and prototyping</p></div>
 </div>
 </div></section>
 
@@ -128,6 +138,7 @@ footer{padding:2rem 0;color:var(--muted);font-size:.85rem}
 </ul>
 </div></section>
 </main>
+</div>
 <footer><div class="wrap">© 2026 Mekdim Tesfaye</div></footer>
 </body>
 </html>
