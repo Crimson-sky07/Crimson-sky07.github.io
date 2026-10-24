@@ -49,13 +49,6 @@ footer{padding:2rem 0;color:var(--muted);font-size:.85rem}
 .sidebar li{display:flex;align-items:center;gap:.6rem;font-size:.92rem}
 .sidebar img{width:20px;height:20px;object-fit:contain;flex:none}
 @media(max-width:900px){.layout{grid-template-columns:1fr;gap:0}.sidebar{order:2;position:static;max-height:none;border-right:0;border-top:1px solid var(--line);padding:2rem 0}.sidebar ul{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}}
-.hero{position:relative;overflow:hidden;border-radius:16px;margin-top:1.5rem;padding:6rem 2rem;color:#fff;background:#111;border-bottom:0}
-.hero-video{position:absolute;inset:0;pointer-events:none}
-.hero-video iframe{position:absolute;top:50%;left:50%;width:max(100%,177.78vh);height:max(100%,56.25vw);min-width:177.78%;min-height:100%;transform:translate(-50%,-50%);border:0}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,12,16,.55),rgba(10,12,16,.8))}
-.hero-content{position:relative;z-index:1}
-.hero .eyebrow,.hero .lead{color:#e6e6e6}
-.hero .btn{border-color:#fff;color:#fff}.hero .btn.primary{background:#fff;color:var(--ink)}
 .avatar{width:120px;height:120px;border-radius:50%;object-fit:cover;aspect-ratio:1/1;border:3px solid rgba(255,255,255,.85);margin-bottom:1.25rem}
 .portrait-img{width:100%;max-width:260px;aspect-ratio:1/1;border-radius:50%;object-fit:cover;display:block}
 .cardimg{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;display:block;margin-bottom:.5rem}
@@ -72,9 +65,7 @@ footer{padding:2rem 0;color:var(--muted);font-size:.85rem}
 <div class="layout"><aside class="sidebar" aria-labelledby="tools-h"><p class="eyebrow" id="tools-h">Software</p><h3>Design</h3><ul><li><img src="assets/logos/canva.png" alt="" width="20" height="20" loading="lazy">Canva</li><li><img src="assets/logos/adobeillustrator.svg" alt="" width="20" height="20" loading="lazy">Adobe Illustrator</li><li><img src="assets/logos/adobeexpress.png" alt="" width="20" height="20" loading="lazy">Adobe Express</li><li><img src="assets/logos/fusion360.svg" alt="" width="20" height="20" loading="lazy">Fusion 360</li></ul><h3>Marketing &amp; CRM</h3><ul><li><img src="assets/logos/mailchimp.svg" alt="" width="20" height="20" loading="lazy">Mailchimp</li><li><img src="assets/logos/hubspot.svg" alt="" width="20" height="20" loading="lazy">HubSpot</li></ul><h3>Project management</h3><ul><li><img src="assets/logos/asana.svg" alt="" width="20" height="20" loading="lazy">Asana</li><li><img src="assets/logos/monday.svg" alt="" width="20" height="20" loading="lazy">Monday.com</li></ul><h3>AI tools</h3><ul><li><img src="assets/logos/claude.svg" alt="" width="20" height="20" loading="lazy">Claude</li><li><img src="assets/logos/googlegemini.svg" alt="" width="20" height="20" loading="lazy">Gemini</li><li><img src="assets/logos/chatgpt.svg" alt="" width="20" height="20" loading="lazy">ChatGPT</li></ul><h3>Web building</h3><ul><li><img src="assets/logos/webflow.svg" alt="" width="20" height="20" loading="lazy">Webflow</li><li><img src="assets/logos/shopify.svg" alt="" width="20" height="20" loading="lazy">Shopify</li><li><img src="assets/logos/wordpress.svg" alt="" width="20" height="20" loading="lazy">WordPress</li><li><img src="assets/logos/wix.svg" alt="" width="20" height="20" loading="lazy">Wix</li><li><img src="assets/logos/squarespace.svg" alt="" width="20" height="20" loading="lazy">Squarespace</li></ul><h3>Productivity</h3><ul><li><img src="assets/logos/microsoft365.svg" alt="" width="20" height="20" loading="lazy">Microsoft 365</li><li><img src="assets/logos/googleworkspace.svg" alt="" width="20" height="20" loading="lazy">Google Workspace</li></ul></aside>
 <main id="main">
 <section class="hero" id="top">
-<div class="hero-video" aria-hidden="true"><iframe src="https://www.youtube-nocookie.com/embed/kv-JSpPQQSw?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=kv-JSpPQQSw&amp;controls=0&amp;modestbranding=1&amp;playsinline=1&amp;rel=0" title="Background video" tabindex="-1" allow="autoplay; encrypted-media" frameborder="0"></iframe></div>
-<div class="hero-overlay" aria-hidden="true"></div>
-<div class="wrap hero-content">
+<div class="wrap">
 <p class="eyebrow">Portfolio</p>
 <h1>Mekdim Tesfaye</h1>
 <p class="lead">Brand &amp; Communications Designer. Brand and storytelling through design, marketing and technical concepts, made for a broader audience.</p>
