@@ -49,6 +49,14 @@ footer{padding:2rem 0;color:var(--muted);font-size:.85rem}
 .sidebar li{display:flex;align-items:center;gap:.6rem;font-size:.92rem}
 .sidebar img{width:20px;height:20px;object-fit:contain;flex:none}
 @media(max-width:900px){.layout{grid-template-columns:1fr;gap:0}.sidebar{order:2;position:static;max-height:none;border-right:0;border-top:1px solid var(--line);padding:2rem 0}.sidebar ul{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}}
+.hero{position:relative;overflow:hidden;border-radius:16px;margin-top:1.5rem;padding:7rem 2.5rem 6rem;color:#fff;border-bottom:0;background:#0b0d12 url(assets/hero-nzas.jpg) center 40%/cover no-repeat}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,10,15,.88) 0%,rgba(8,10,15,.65) 50%,rgba(8,10,15,.35) 100%)}
+.hero>.wrap{position:relative;z-index:1}
+.hero h1{color:#fff}.hero .eyebrow,.hero .lead{color:#e4e6ea}
+.hero .btn{border-color:rgba(255,255,255,.85);color:#fff}.hero .btn.primary{background:#fff;color:var(--ink);border-color:#fff}
+.hero .btn:hover,.hero .btn:focus-visible{background:var(--accent);border-color:var(--accent);color:#fff}
+.hero-caption{position:absolute;right:1rem;bottom:.75rem;z-index:1;margin:0;font-size:11.5px;color:rgba(255,255,255,.6);max-width:calc(100% - 2rem);text-align:right}
+@media(max-width:720px){.hero{padding:4.5rem 1.25rem 4.5rem}.hero::before{background:rgba(8,10,15,.72)}.hero-caption{left:1rem;text-align:left}}
 .avatar{width:120px;height:120px;border-radius:50%;object-fit:cover;aspect-ratio:1/1;border:3px solid rgba(255,255,255,.85);margin-bottom:1.25rem}
 .portrait-frame{width:260px;max-width:100%;aspect-ratio:1/1;flex-shrink:0;align-self:center;justify-self:center;border-radius:50%;overflow:hidden}
 .portrait-img{width:100%;height:100%;object-fit:cover;object-position:center 30%;border-radius:50%;display:block}
@@ -75,7 +83,9 @@ footer{padding:2rem 0;color:var(--muted);font-size:.85rem}
 <a class="btn" href="#" aria-disabled="true">Download CV [link coming]</a>
 <a class="btn" href="#contact">Contact</a>
 </div>
-</div></section>
+</div>
+<p class="hero-caption">Background: New Zealand Aerospace Summit — event branding, design and promotion led by Mekdim Tesfaye.</p>
+</section>
 
 <section id="about"><div class="wrap about">
 <div class="portrait-frame"><img class="portrait-img" src="assets/profile.jpg" alt="Portrait of Mekdim Tesfaye" width="600" height="600"></div>
@@ -92,10 +102,10 @@ footer{padding:2rem 0;color:var(--muted);font-size:.85rem}
 <p class="eyebrow">Recognition</p>
 <h2>Recognition</h2>
 <div class="grid">
-<article class="card"><img class="cardimg" src="assets/recognition-smart-cities.jpg" alt="Smart Cities Validator programme winner" loading="lazy"><h3>Smart Cities Validator: winner</h3><p>Oasis Aero, the team I was part of, was named Overall Winner of ChristchurchNZ's Smart City Challenge 2024 at a showcase at the Christchurch Town Hall. It topped 17 ventures in the 10-week Validator. · <a href="https://www.scoop.co.nz/stories/AK2406/S00536/smart-city-challenge-2024-winners.htm" target="_blank" rel="noopener noreferrer">Read on Scoop</a></p></article>
-<article class="card"><img class="cardimg" src="assets/recognition-uc-ones-to-watch.jpg" alt="University of Canterbury Ones to watch feature" loading="lazy"><h3>University of Canterbury "Ones to watch"</h3><p>Profiled (BCom 2022) in UC's 150th anniversary alumni showcase for Oasis Orbital Systems, a startup using orbital live-streaming to let VR headset users experience the edge of space. · <a href="https://www.canterbury.ac.nz/about-uc/our-story/150th/150th-alumni-showcase/ones-to-watch" target="_blank" rel="noopener noreferrer">View feature</a></p></article>
-<article class="card"><img class="cardimg" src="assets/recognition-balloon.jpg" alt="High-altitude balloon launch" loading="lazy"><h3>High-altitude balloon in the news</h3><p>Stuff featured me as a young entrepreneur filming high-definition video from the edge of space with a high-altitude balloon. · <a href="https://www.stuff.co.nz/business/350488082/young-entrepreneur-filming-high-definition-videos-from-the-edge-of-space" target="_blank" rel="noopener noreferrer">Read on Stuff</a></p></article>
-<article class="card"><h3>UC summer startup programme</h3><p>Took part in the UC Centre for Entrepreneurship's 10-week Summer Startup Programme and received a scholarship for the venture. · <a href="https://www.canterbury.ac.nz/about-uc/our-structure/faculties/business-faculty/centre-for-entrepreneurship/summer-startup-programme" target="_blank" rel="noopener noreferrer">About the programme</a></p></article>
+<article class="card"><img class="cardimg" src="assets/recognition-smart-cities.jpg" alt="Smart Cities Validator programme winner" loading="lazy"><h3>Smart Cities Validator: winner</h3><p>I founded Oasis Aero and grew the team that was named Overall Winner of ChristchurchNZ's Smart City Challenge 2024, topping 17 ventures in the 10-week Validator. · <a href="https://www.scoop.co.nz/stories/AK2406/S00536/smart-city-challenge-2024-winners.htm" target="_blank" rel="noopener noreferrer">Read on Scoop</a></p></article>
+<article class="card"><img class="cardimg" src="assets/recognition-uc-ones-to-watch.jpg" alt="University of Canterbury Ones to watch feature" loading="lazy"><h3>University of Canterbury "Ones to watch"</h3><p>Profiled (BCom 2022) in UC's 150th anniversary alumni showcase as founder of Oasis Orbital Systems, a startup using orbital live-streaming to let VR headset users experience the edge of space. · <a href="https://www.canterbury.ac.nz/about-uc/our-story/150th/150th-alumni-showcase/ones-to-watch" target="_blank" rel="noopener noreferrer">View feature</a></p></article>
+<article class="card"><img class="cardimg" src="assets/recognition-balloon.jpg" alt="High-altitude balloon launch" loading="lazy"><h3>High-altitude balloon in the news</h3><p>Stuff featured me as founder of my venture, filming high-definition video from the edge of space with a high-altitude balloon. · <a href="https://www.stuff.co.nz/business/350488082/young-entrepreneur-filming-high-definition-videos-from-the-edge-of-space" target="_blank" rel="noopener noreferrer">Read on Stuff</a></p></article>
+<article class="card"><h3>UC summer startup programme</h3><p>Took part in the UC Centre for Entrepreneurship's 10-week Summer Startup Programme and received the scholarship for the venture I founded. · <a href="https://www.canterbury.ac.nz/about-uc/our-structure/faculties/business-faculty/centre-for-entrepreneurship/summer-startup-programme" target="_blank" rel="noopener noreferrer">About the programme</a></p></article>
 </div>
 </div></section>
 
