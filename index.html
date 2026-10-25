@@ -57,6 +57,20 @@ footer{padding:2rem 0;color:var(--muted);font-size:.85rem}
 .hero .btn:hover,.hero .btn:focus-visible{background:var(--accent);border-color:var(--accent);color:#fff}
 .hero-caption{position:absolute;right:1rem;bottom:.75rem;z-index:1;margin:0;font-size:11.5px;color:rgba(255,255,255,.6);max-width:calc(100% - 2rem);text-align:right}
 @media(max-width:720px){.hero{padding:4.5rem 1.25rem 4.5rem}.hero::before{background:rgba(8,10,15,.72)}.hero-caption{left:1rem;text-align:left}}
+.side-intro{font-size:.85rem;color:var(--muted);margin:0 0 .5rem}
+.subhead{margin-top:3rem}
+.marquee-section{padding:3rem 0}
+.marquee{display:flex;overflow:hidden;gap:3rem;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marquee-track{display:flex;flex:none;gap:3rem;list-style:none;margin:0;padding:0;min-width:100%;justify-content:space-around;animation:scroll 28s linear infinite}
+.marquee-track li{white-space:nowrap;font-family:Fraunces,serif;font-size:1.35rem;color:var(--muted)}
+.marquee-track.tiles{gap:1.25rem;animation-duration:40s}
+.marquee-track.tiles li{width:260px}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.note{font-size:.85rem;color:var(--muted);margin-top:1rem}
+@keyframes scroll{to{transform:translateX(calc(-100% - 3rem))}}
+.marquee-track.tiles{--g:1.25rem}
+@media(prefers-reduced-motion:reduce){.marquee{flex-wrap:wrap;mask-image:none}.marquee-track{animation:none;flex-wrap:wrap;min-width:0}.marquee-track[aria-hidden]{display:none}html{scroll-behavior:auto}}
+@media(max-width:720px){.marquee-track li{font-size:1.1rem}.marquee-track.tiles li{width:200px}}
 .avatar{width:120px;height:120px;border-radius:50%;object-fit:cover;aspect-ratio:1/1;border:3px solid rgba(255,255,255,.85);margin-bottom:1.25rem}
 .portrait-frame{width:260px;max-width:100%;aspect-ratio:1/1;flex-shrink:0;align-self:center;justify-self:center;border-radius:50%;overflow:hidden}
 .portrait-img{width:100%;height:100%;object-fit:cover;object-position:center 30%;border-radius:50%;display:block}
@@ -71,7 +85,7 @@ footer{padding:2rem 0;color:var(--muted);font-size:.85rem}
 <a class="brand" href="#top">Mekdim Tesfaye</a>
 <nav aria-label="Main"><ul><li><a href="#about">About</a></li><li><a href="#recognition">Recognition</a></li><li><a href="#work">Work</a></li><li><a href="#video">Video</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li></ul></nav>
 </div></header>
-<div class="layout"><aside class="sidebar" aria-labelledby="tools-h"><p class="eyebrow" id="tools-h">Software</p><h3>Design</h3><ul><li><img src="assets/logos/canva.png" alt="" width="20" height="20" loading="lazy">Canva</li><li><img src="assets/logos/adobeillustrator.svg" alt="" width="20" height="20" loading="lazy">Adobe Illustrator</li><li><img src="assets/logos/adobeexpress.png" alt="" width="20" height="20" loading="lazy">Adobe Express</li><li><img src="assets/logos/fusion360.svg" alt="" width="20" height="20" loading="lazy">Fusion 360</li></ul><h3>Marketing &amp; CRM</h3><ul><li><img src="assets/logos/mailchimp.svg" alt="" width="20" height="20" loading="lazy">Mailchimp</li><li><img src="assets/logos/hubspot.svg" alt="" width="20" height="20" loading="lazy">HubSpot</li></ul><h3>Project management</h3><ul><li><img src="assets/logos/asana.svg" alt="" width="20" height="20" loading="lazy">Asana</li><li><img src="assets/logos/monday.svg" alt="" width="20" height="20" loading="lazy">Monday.com</li></ul><h3>AI tools</h3><ul><li><img src="assets/logos/claude.svg" alt="" width="20" height="20" loading="lazy">Claude</li><li><img src="assets/logos/googlegemini.svg" alt="" width="20" height="20" loading="lazy">Gemini</li><li><img src="assets/logos/chatgpt.svg" alt="" width="20" height="20" loading="lazy">ChatGPT</li></ul><h3>Web building</h3><ul><li><img src="assets/logos/webflow.svg" alt="" width="20" height="20" loading="lazy">Webflow</li><li><img src="assets/logos/shopify.svg" alt="" width="20" height="20" loading="lazy">Shopify</li><li><img src="assets/logos/wordpress.svg" alt="" width="20" height="20" loading="lazy">WordPress</li><li><img src="assets/logos/wix.svg" alt="" width="20" height="20" loading="lazy">Wix</li><li><img src="assets/logos/squarespace.svg" alt="" width="20" height="20" loading="lazy">Squarespace</li></ul><h3>Productivity</h3><ul><li><img src="assets/logos/microsoft365.svg" alt="" width="20" height="20" loading="lazy">Microsoft 365</li><li><img src="assets/logos/googleworkspace.svg" alt="" width="20" height="20" loading="lazy">Google Workspace</li></ul></aside>
+<div class="layout"><aside class="sidebar" aria-labelledby="tools-h"><p class="eyebrow" id="tools-h">Software</p><p class="side-intro">Tools I use day to day, grouped by what I use them for.</p><h3>Design</h3><ul><li><img src="assets/logos/canva.png" alt="" width="20" height="20" loading="lazy">Canva</li><li><img src="assets/logos/adobeillustrator.svg" alt="" width="20" height="20" loading="lazy">Adobe Illustrator</li><li><img src="assets/logos/adobeexpress.png" alt="" width="20" height="20" loading="lazy">Adobe Express</li><li><img src="assets/logos/fusion360.svg" alt="" width="20" height="20" loading="lazy">Fusion 360</li></ul><h3>Marketing &amp; CRM</h3><ul><li><img src="assets/logos/mailchimp.svg" alt="" width="20" height="20" loading="lazy">Mailchimp</li><li><img src="assets/logos/hubspot.svg" alt="" width="20" height="20" loading="lazy">HubSpot</li></ul><h3>Project management</h3><ul><li><img src="assets/logos/asana.svg" alt="" width="20" height="20" loading="lazy">Asana</li><li><img src="assets/logos/monday.svg" alt="" width="20" height="20" loading="lazy">Monday.com</li></ul><h3>AI tools</h3><ul><li><img src="assets/logos/claude.svg" alt="" width="20" height="20" loading="lazy">Claude</li><li><img src="assets/logos/googlegemini.svg" alt="" width="20" height="20" loading="lazy">Gemini</li><li><img src="assets/logos/chatgpt.svg" alt="" width="20" height="20" loading="lazy">ChatGPT</li></ul><h3>Web building</h3><ul><li><img src="assets/logos/webflow.svg" alt="" width="20" height="20" loading="lazy">Webflow</li><li><img src="assets/logos/shopify.svg" alt="" width="20" height="20" loading="lazy">Shopify</li><li><img src="assets/logos/wordpress.svg" alt="" width="20" height="20" loading="lazy">WordPress</li><li><img src="assets/logos/wix.svg" alt="" width="20" height="20" loading="lazy">Wix</li><li><img src="assets/logos/squarespace.svg" alt="" width="20" height="20" loading="lazy">Squarespace</li></ul><h3>Productivity</h3><ul><li><img src="assets/logos/microsoft365.svg" alt="" width="20" height="20" loading="lazy">Microsoft 365</li><li><img src="assets/logos/googleworkspace.svg" alt="" width="20" height="20" loading="lazy">Google Workspace</li></ul><h3>Events &amp; webinars</h3><ul><li><img src="assets/logos/gotowebinar.png" alt="" width="20" height="20" loading="lazy">GoToWebinar (virtual events)</li><li><img src="assets/logos/contrast.png" alt="" width="20" height="20" loading="lazy">Contrast (webinars)</li><li><img src="assets/logos/microsoftexcel.svg" alt="" width="20" height="20" loading="lazy">Excel (event planning)</li></ul></aside>
 <main id="main">
 <section class="hero" id="top">
 <div class="wrap">
@@ -98,15 +112,11 @@ footer{padding:2rem 0;color:var(--muted);font-size:.85rem}
 </div></section>
 
 
-<section id="recognition"><div class="wrap">
-<p class="eyebrow">Recognition</p>
-<h2>Recognition</h2>
-<div class="grid">
-<article class="card"><img class="cardimg" src="assets/recognition-smart-cities.jpg" alt="Smart Cities Validator programme winner" loading="lazy"><h3>Smart Cities Validator: winner</h3><p>I founded Oasis Aero and grew the team that was named Overall Winner of ChristchurchNZ's Smart City Challenge 2024, topping 17 ventures in the 10-week Validator. · <a href="https://www.scoop.co.nz/stories/AK2406/S00536/smart-city-challenge-2024-winners.htm" target="_blank" rel="noopener noreferrer">Read on Scoop</a></p></article>
-<article class="card"><img class="cardimg" src="assets/recognition-uc-ones-to-watch.jpg" alt="University of Canterbury Ones to watch feature" loading="lazy"><h3>University of Canterbury "Ones to watch"</h3><p>Profiled (BCom 2022) in UC's 150th anniversary alumni showcase as founder of Oasis Orbital Systems, a startup using orbital live-streaming to let VR headset users experience the edge of space. · <a href="https://www.canterbury.ac.nz/about-uc/our-story/150th/150th-alumni-showcase/ones-to-watch" target="_blank" rel="noopener noreferrer">View feature</a></p></article>
-<article class="card"><img class="cardimg" src="assets/recognition-balloon.jpg" alt="High-altitude balloon launch" loading="lazy"><h3>High-altitude balloon in the news</h3><p>Stuff featured me as founder of my venture, filming high-definition video from the edge of space with a high-altitude balloon. · <a href="https://www.stuff.co.nz/business/350488082/young-entrepreneur-filming-high-definition-videos-from-the-edge-of-space" target="_blank" rel="noopener noreferrer">Read on Stuff</a></p></article>
-<article class="card"><h3>UC summer startup programme</h3><p>Took part in the UC Centre for Entrepreneurship's 10-week Summer Startup Programme and received the scholarship for the venture I founded. · <a href="https://www.canterbury.ac.nz/about-uc/our-structure/faculties/business-faculty/centre-for-entrepreneurship/summer-startup-programme" target="_blank" rel="noopener noreferrer">About the programme</a></p></article>
-</div>
+
+<section id="worked-with" class="marquee-section" aria-labelledby="ww-h"><div class="wrap">
+<p class="eyebrow" id="ww-h">Worked with</p>
+<div class="marquee"><ul class="marquee-track"><li>Aerospace New Zealand</li><li>Esri Australia</li><li>ChristchurchNZ</li><li>University of Canterbury</li><li>[More names to add]</li></ul><ul class="marquee-track" aria-hidden="true"><li>Aerospace New Zealand</li><li>Esri Australia</li><li>ChristchurchNZ</li><li>University of Canterbury</li><li>[More names to add]</li></ul></div>
+<p class="note">[Needs more names: add clients and partners.]</p>
 </div></section>
 
 <section id="work"><div class="wrap">
@@ -123,20 +133,49 @@ footer{padding:2rem 0;color:var(--muted);font-size:.85rem}
 </div>
 </div></section>
 
+<section id="recognition"><div class="wrap">
+<p class="eyebrow">Recognition</p>
+<h2>Recognition</h2>
+<p class="lead">Grouped by organisation: Esri Australia, Aerospace New Zealand (one tile per year) and ChristchurchNZ.</p>
+<div class="grid">
+<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>[Recognition title]</h3><p>[One-line description] · [link]</p><span class="tag">Esri Australia</span></article>
+<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>[Year 1]: [Recognition title]</h3><p>[One-line description] · [link]</p><span class="tag">Aerospace New Zealand</span></article>
+<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>[Year 2]: [Recognition title]</h3><p>[One-line description] · [link]</p><span class="tag">Aerospace New Zealand</span></article>
+<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>[Year 3]: [Recognition title]</h3><p>[One-line description] · [link]</p><span class="tag">Aerospace New Zealand</span></article>
+<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>[Year 4]: [Recognition title]</h3><p>[One-line description] · [link]</p><span class="tag">Aerospace New Zealand</span></article>
+<article class="card"><img class="cardimg" src="assets/recognition-smart-cities.jpg" alt="Smart Cities Validator programme winner" loading="lazy"><h3>Smart Cities Validator: winner</h3><p>I founded Oasis Aero and grew the team that was named Overall Winner of ChristchurchNZ's Smart City Challenge 2024, topping 17 ventures in the 10-week Validator. · <a href="https://www.scoop.co.nz/stories/AK2406/S00536/smart-city-challenge-2024-winners.htm" target="_blank" rel="noopener noreferrer">Read on Scoop</a></p><span class="tag">ChristchurchNZ</span></article>
+</div>
+<h3 class="subhead">Other recognition</h3>
+<div class="grid">
+<article class="card"><img class="cardimg" src="assets/recognition-uc-ones-to-watch.jpg" alt="University of Canterbury Ones to watch feature" loading="lazy"><h3>University of Canterbury "Ones to watch"</h3><p>Profiled (BCom 2022) in UC's 150th anniversary alumni showcase as founder of Oasis Orbital Systems, a startup using orbital live-streaming to let VR headset users experience the edge of space. · <a href="https://www.canterbury.ac.nz/about-uc/our-story/150th/150th-alumni-showcase/ones-to-watch" target="_blank" rel="noopener noreferrer">View feature</a></p></article>
+<article class="card"><img class="cardimg" src="assets/recognition-balloon.jpg" alt="High-altitude balloon launch" loading="lazy"><h3>High-altitude balloon in the news</h3><p>Stuff featured me as founder of my venture, filming high-definition video from the edge of space with a high-altitude balloon. · <a href="https://www.stuff.co.nz/business/350488082/young-entrepreneur-filming-high-definition-videos-from-the-edge-of-space" target="_blank" rel="noopener noreferrer">Read on Stuff</a></p></article>
+<article class="card"><h3>UC summer startup programme</h3><p>Took part in the UC Centre for Entrepreneurship's 10-week Summer Startup Programme and received the scholarship for the venture I founded. · <a href="https://www.canterbury.ac.nz/about-uc/our-structure/faculties/business-faculty/centre-for-entrepreneurship/summer-startup-programme" target="_blank" rel="noopener noreferrer">About the programme</a></p></article>
+</div>
+</div></section>
+
 <section id="video"><div class="wrap">
 <p class="eyebrow">Motion</p>
-<h2>Video</h2>
+<h2>Videos</h2>
 <div class="grid">
 <article class="card"><div class="ph video" role="img" aria-label="Video placeholder">Video placeholder</div><h3>[Video title]</h3><p>[One-line description]</p></article>
 <article class="card"><div class="ph video" role="img" aria-label="Video placeholder">Video placeholder</div><h3>[Video title]</h3><p>[One-line description]</p></article>
+<article class="card"><div class="ph video" role="img" aria-label="Video placeholder">Video placeholder</div><h3>[Video title]</h3><p>[One-line description]</p></article>
 </div>
+</div></section>
+
+<section id="creative" class="marquee-section" aria-labelledby="cw-h"><div class="wrap">
+<p class="eyebrow">More work</p>
+<h2 id="cw-h">Other creative work &amp; graphic design</h2>
+<div class="marquee"><ul class="marquee-track tiles"><li><div class="ph" role="img" aria-label="Design placeholder">[Creative work 1]</div></li><li><div class="ph" role="img" aria-label="Design placeholder">[Creative work 2]</div></li><li><div class="ph" role="img" aria-label="Design placeholder">[Creative work 3]</div></li><li><div class="ph" role="img" aria-label="Design placeholder">[Creative work 4]</div></li><li><div class="ph" role="img" aria-label="Design placeholder">[Creative work 5]</div></li><li><div class="ph" role="img" aria-label="Design placeholder">[Creative work 6]</div></li></ul><ul class="marquee-track tiles" aria-hidden="true"><li><div class="ph" >[Creative work 1]</div></li><li><div class="ph" >[Creative work 2]</div></li><li><div class="ph" >[Creative work 3]</div></li><li><div class="ph" >[Creative work 4]</div></li><li><div class="ph" >[Creative work 5]</div></li><li><div class="ph" >[Creative work 6]</div></li></ul></div>
 </div></section>
 
 <section id="projects"><div class="wrap">
 <p class="eyebrow">Projects</p>
 <h2>Other high-impact projects</h2>
 <div class="grid">
-<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>High-altitude balloon</h3><p>A balloon flight to near space that was featured on the news. [Add detail.]</p><span class="tag">Engineering · Media</span></article>
+<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>[Rocket Lab?] campaign</h3><p>[Campaign name and one-line description. Confirm the organisation name.]</p><span class="tag">Campaign</span></article>
+<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>Edge-of-space balloon trips</h3><p>A balloon flight to near space that was featured on the news. [Add detail.]</p><span class="tag">Engineering · Media</span></article>
+<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>[Project 3: to be decided]</h3><p>[One-line description]</p><span class="tag">[Tag]</span></article>
 <article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>Chips to the edge of space</h3><p>Sending a packet of chips to the edge of space. [Add detail.]</p><span class="tag">Stunt · Storytelling</span></article>
 <article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>Radio coverage</h3><p>[Programme/station] coverage of [project]. [Add detail.]</p><span class="tag">Media</span></article>
 <article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>Bandit Robotics airship</h3><p>An airship project. [Add detail.]</p><span class="tag">Concept design</span></article>
