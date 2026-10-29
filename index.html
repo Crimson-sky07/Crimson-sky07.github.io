@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mekdim Tesfaye | Brand &amp; Communications Designer</title>
-<meta name="description" content="Portfolio of Mekdim Tesfaye, brand and communications designer with a technical, engineering-minded edge.">
+<title>Mekdim Tesfaye | Marketing &amp; Communications</title>
+<meta name="description" content="Marketing and communications for technical industries. Campaigns, events, PR and content across aerospace, geospatial software and deep tech.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
 <style>
@@ -98,9 +98,9 @@ body.modal-open{overflow:hidden}
 .pm-close:hover{background:#f0f0ec}
 .pm-gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:.6rem;align-content:start}
 .pm-gallery button{border:0;padding:0;background:none;cursor:zoom-in;border-radius:10px;overflow:hidden}
-.pm-gallery button:first-child{grid-column:1/-1}
+.pm-fig{margin:0;display:flex;flex-direction:column;gap:.3rem}.pm-fig:first-child{grid-column:1/-1}.pm-fig figcaption{font-size:.8rem;color:var(--muted);line-height:1.4}
 .pm-gallery img{width:100%;height:100%;aspect-ratio:4/3;object-fit:cover;display:block;transition:transform .3s}
-.pm-gallery button:first-child img{aspect-ratio:16/10}
+.pm-fig:first-child img{aspect-ratio:16/10}
 .pm-gallery button:hover img{transform:scale(1.04)}
 .pm-note{font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);padding-top:.8rem;margin-top:1.2rem}
 .pm-slot{grid-column:1/-1;aspect-ratio:16/7;border-radius:10px;border:2px dashed var(--line);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.9rem;background:repeating-linear-gradient(45deg,#f3f3ef 0 10px,#ecece7 10px 20px)}
@@ -118,200 +118,268 @@ body.modal-open{overflow:hidden}
 .lb .lb-count{position:absolute;bottom:1rem;left:50%;transform:translateX(-50%);color:#ddd;font-size:.85rem}
 @media (max-width:800px){.pm{padding:0;align-items:stretch}.pm-panel{grid-template-columns:1fr;border-radius:0;max-height:100vh;padding:1.25rem;gap:1.25rem}.pm-close{position:sticky;top:0;margin-left:auto;grid-row:1}}
 @media (prefers-reduced-motion:reduce){.pm-panel,.pm-backdrop,.lb,.card.project,.pm-gallery img{transition:none!important;transform:none!important}}
+.support{color:#e4e6ea;max-width:40rem;margin:.75rem 0 0}
+.proof{list-style:none;padding:0;margin:1.75rem 0 0;display:flex;flex-wrap:wrap;gap:.6rem 1.75rem;font-size:.9rem;color:#e4e6ea}
+.proof li{border-left:2px solid rgba(255,255,255,.5);padding-left:.7rem}
+.tools{list-style:none;padding:0;margin:.9rem 0 0;display:flex;flex-wrap:wrap;gap:.6rem}
+.tools li{display:flex;align-items:center;gap:.55rem;font-size:.95rem;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:.45rem .9rem}
+.tools img{width:22px;height:22px;object-fit:contain}
+.pm-panel.noimg{grid-template-columns:1fr;width:min(760px,100%)}.pm-panel.noimg .pm-gallery{display:none}
+.lb-cap{position:absolute;bottom:2.6rem;left:50%;transform:translateX(-50%);color:#eee;font-size:.9rem;text-align:center;max-width:90vw}
+.card .more{display:block}
+.card.project{display:flex;flex-direction:column;justify-content:flex-start;align-items:stretch}.card.project .tag{align-self:flex-start}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav"><div class="wrap">
 <a class="brand" href="#top">Mekdim Tesfaye</a>
-<nav aria-label="Main"><ul><li><a href="#about">About</a></li><li><a href="#recognition">Recognition</a></li><li><a href="#work">Work</a></li><li><a href="#video">Video</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+<nav aria-label="Main"><ul><li><a href="#about">About</a></li><li><a href="#work">Work</a></li><li><a href="#recognition">Recognition</a></li><li><a href="#projects">Side projects</a></li><li><a href="#contact">Contact</a></li></ul></nav>
 </div></header>
 <div class="layout"><main id="main">
 <section class="hero" id="top">
 <div class="wrap">
 <p class="eyebrow">Portfolio</p>
 <h1>Mekdim Tesfaye</h1>
-<p class="lead">Brand &amp; Communications Designer. Brand and storytelling through design, marketing and technical concepts, made for a broader audience.</p>
+<p class="lead">Marketing and communications for technical industries.</p>
+<p class="support">Campaigns, events, PR and content for aerospace, geospatial software and deep tech. I make complex products easy to understand, and I get people in the room.</p>
 <div class="btns">
 <a class="btn primary" href="#work">View work</a>
-<a class="btn" href="#" aria-disabled="true">Download CV [link coming]</a>
-<a class="btn" href="#contact">Contact</a>
+<a class="btn" href="#" aria-disabled="true">Download CV</a>
+<a class="btn" href="#contact">Get in touch</a>
 </div>
+<ul class="proof"><li>~4x webinar attendance at Esri Australia</li><li>Record ticket revenue, NZ Aerospace Summit 2026</li><li>2,500 → 9,000+ LinkedIn followers, Aerospace NZ</li></ul>
 </div>
-<p class="hero-caption">Background: New Zealand Aerospace Summit — event branding, design and promotion led by Mekdim Tesfaye.</p>
+<p class="hero-caption">NZ Aerospace Summit. Campaign, branding and promotion.</p>
 </section>
 
 <section id="about"><div class="wrap about">
 <div class="portrait-frame"><img class="portrait-img" src="assets/profile.jpg" alt="Portrait of Mekdim Tesfaye" width="600" height="600"></div>
 <div>
 <p class="eyebrow">About</p>
-<h2>Hi, I'm Mekdim.</h2>
-<p>I bring a blend that's rare in marketing: brand and communications experience alongside real technical skills. I've spent five years on brand and communications for Aerospace New Zealand, Esri Australia and ChristchurchNZ, working across graphic design, campaign material and video, with a focus on event promotion and delivery.</p>
-<p>On the technical side, I have a background in aircraft engineering, CAD, prototyping and additive manufacturing, which I use to bring concepts to life. That means I understand technical products and can explain them clearly. I'm open to freelance marketing, brand and design contracts.</p>
+<h2>Hi, I'm Mekdim (most people call me Mek).</h2>
+<p>I've spent five years in marketing and communications for Esri Australia, Aerospace New Zealand and ChristchurchNZ. That covers campaigns, virtual and in-person events, PR, content and design, usually from first brief to the last attendee leaving.</p>
+<p>Before marketing, I trained as an aircraft engineer at Air New Zealand. I still use CAD and 3D printing, and I co-founded a startup that flew a camera above 100,000 ft. That background is my unfair advantage. I can sit with engineers, understand what they've built, and turn it into something customers, sponsors and journalists actually care about.</p>
+<p>I'm based on the Gold Coast, I'm an NZ citizen with full Australian working rights, and I'm looking for marketing and communications roles in aerospace, technology and innovation.</p>
 </div>
 </div></section>
 
-
-
 <section id="worked-with" class="marquee-section" aria-labelledby="ww-h"><div class="wrap">
 <p class="eyebrow" id="ww-h">Tools I work with</p>
-<div class="marquee logo-row"><ul class="marquee-track"><li><img src="assets/logos/canva.png" alt="" width="28" height="28" loading="lazy"><span>Canva</span></li><li><img src="assets/logos/adobeillustrator.svg" alt="" width="28" height="28" loading="lazy"><span>Adobe Illustrator</span></li><li><img src="assets/logos/adobeexpress.png" alt="" width="28" height="28" loading="lazy"><span>Adobe Express</span></li><li><img src="assets/logos/fusion360.svg" alt="" width="28" height="28" loading="lazy"><span>Fusion 360</span></li><li><img src="assets/logos/mailchimp.svg" alt="" width="28" height="28" loading="lazy"><span>Mailchimp</span></li><li><img src="assets/logos/hubspot.svg" alt="" width="28" height="28" loading="lazy"><span>HubSpot</span></li><li><img src="assets/logos/asana.svg" alt="" width="28" height="28" loading="lazy"><span>Asana</span></li></ul><ul class="marquee-track" aria-hidden="true"><li><img src="assets/logos/canva.png" alt="" width="28" height="28" loading="lazy"><span>Canva</span></li><li><img src="assets/logos/adobeillustrator.svg" alt="" width="28" height="28" loading="lazy"><span>Adobe Illustrator</span></li><li><img src="assets/logos/adobeexpress.png" alt="" width="28" height="28" loading="lazy"><span>Adobe Express</span></li><li><img src="assets/logos/fusion360.svg" alt="" width="28" height="28" loading="lazy"><span>Fusion 360</span></li><li><img src="assets/logos/mailchimp.svg" alt="" width="28" height="28" loading="lazy"><span>Mailchimp</span></li><li><img src="assets/logos/hubspot.svg" alt="" width="28" height="28" loading="lazy"><span>HubSpot</span></li><li><img src="assets/logos/asana.svg" alt="" width="28" height="28" loading="lazy"><span>Asana</span></li></ul></div>
-<div class="marquee logo-row reverse"><ul class="marquee-track"><li><img src="assets/logos/monday.png" alt="" width="28" height="28" loading="lazy"><span>Monday.com</span></li><li><img src="assets/logos/claude.svg" alt="" width="28" height="28" loading="lazy"><span>Claude</span></li><li><img src="assets/logos/googlegemini.svg" alt="" width="28" height="28" loading="lazy"><span>Gemini</span></li><li><img src="assets/logos/chatgpt.svg" alt="" width="28" height="28" loading="lazy"><span>ChatGPT</span></li><li><img src="assets/logos/webflow.svg" alt="" width="28" height="28" loading="lazy"><span>Webflow</span></li><li><img src="assets/logos/shopify.svg" alt="" width="28" height="28" loading="lazy"><span>Shopify</span></li><li><img src="assets/logos/wordpress.svg" alt="" width="28" height="28" loading="lazy"><span>WordPress</span></li></ul><ul class="marquee-track" aria-hidden="true"><li><img src="assets/logos/monday.png" alt="" width="28" height="28" loading="lazy"><span>Monday.com</span></li><li><img src="assets/logos/claude.svg" alt="" width="28" height="28" loading="lazy"><span>Claude</span></li><li><img src="assets/logos/googlegemini.svg" alt="" width="28" height="28" loading="lazy"><span>Gemini</span></li><li><img src="assets/logos/chatgpt.svg" alt="" width="28" height="28" loading="lazy"><span>ChatGPT</span></li><li><img src="assets/logos/webflow.svg" alt="" width="28" height="28" loading="lazy"><span>Webflow</span></li><li><img src="assets/logos/shopify.svg" alt="" width="28" height="28" loading="lazy"><span>Shopify</span></li><li><img src="assets/logos/wordpress.svg" alt="" width="28" height="28" loading="lazy"><span>WordPress</span></li></ul></div>
-<div class="marquee logo-row"><ul class="marquee-track"><li><img src="assets/logos/wix.svg" alt="" width="28" height="28" loading="lazy"><span>Wix</span></li><li><img src="assets/logos/squarespace.svg" alt="" width="28" height="28" loading="lazy"><span>Squarespace</span></li><li><img src="assets/logos/microsoft365.svg" alt="" width="28" height="28" loading="lazy"><span>Microsoft 365</span></li><li><img src="assets/logos/googleworkspace.png" alt="" width="28" height="28" loading="lazy"><span>Google Workspace</span></li><li><img src="assets/logos/gotowebinar.png" alt="" width="28" height="28" loading="lazy"><span>GoToWebinar</span></li><li><img src="assets/logos/contrast.png" alt="" width="28" height="28" loading="lazy"><span>Contrast</span></li><li><img src="assets/logos/accelevents.png" alt="" width="28" height="28" loading="lazy"><span>Accelevents</span></li></ul><ul class="marquee-track" aria-hidden="true"><li><img src="assets/logos/wix.svg" alt="" width="28" height="28" loading="lazy"><span>Wix</span></li><li><img src="assets/logos/squarespace.svg" alt="" width="28" height="28" loading="lazy"><span>Squarespace</span></li><li><img src="assets/logos/microsoft365.svg" alt="" width="28" height="28" loading="lazy"><span>Microsoft 365</span></li><li><img src="assets/logos/googleworkspace.png" alt="" width="28" height="28" loading="lazy"><span>Google Workspace</span></li><li><img src="assets/logos/gotowebinar.png" alt="" width="28" height="28" loading="lazy"><span>GoToWebinar</span></li><li><img src="assets/logos/contrast.png" alt="" width="28" height="28" loading="lazy"><span>Contrast</span></li><li><img src="assets/logos/accelevents.png" alt="" width="28" height="28" loading="lazy"><span>Accelevents</span></li></ul></div>
+<ul class="tools"><li><img src="assets/logos/hubspot.svg" alt="" width="22" height="22" loading="lazy"><span>HubSpot</span></li><li><img src="assets/logos/mailchimp.svg" alt="" width="22" height="22" loading="lazy"><span>Mailchimp</span></li><li><img src="assets/logos/gotowebinar.png" alt="" width="22" height="22" loading="lazy"><span>GoTo Webinar</span></li><li><img src="assets/logos/contrast.png" alt="" width="22" height="22" loading="lazy"><span>Contrast</span></li><li><img src="assets/logos/zoom.svg" alt="" width="22" height="22" loading="lazy"><span>Zoom</span></li><li><img src="assets/logos/googleanalytics.svg" alt="" width="22" height="22" loading="lazy"><span>Google Analytics</span></li><li><img src="assets/logos/webflow.svg" alt="" width="22" height="22" loading="lazy"><span>Webflow</span></li><li><img src="assets/logos/wordpress.svg" alt="" width="22" height="22" loading="lazy"><span>WordPress</span></li><li><img src="assets/logos/shopify.svg" alt="" width="22" height="22" loading="lazy"><span>Shopify</span></li><li><img src="assets/logos/canva.png" alt="" width="22" height="22" loading="lazy"><span>Canva</span></li><li><img src="assets/logos/figma.svg" alt="" width="22" height="22" loading="lazy"><span>Figma</span></li><li><img src="assets/logos/adobeillustrator.svg" alt="" width="22" height="22" loading="lazy"><span>Adobe Illustrator</span></li><li><img src="assets/logos/fusion360.svg" alt="" width="22" height="22" loading="lazy"><span>Fusion 360</span></li><li><img src="assets/logos/claude.svg" alt="" width="22" height="22" loading="lazy"><span>Claude</span></li><li><img src="assets/logos/asana.svg" alt="" width="22" height="22" loading="lazy"><span>Asana</span></li><li><img src="assets/logos/monday.png" alt="" width="22" height="22" loading="lazy"><span>Monday.com</span></li><li><img src="assets/logos/microsoft365.svg" alt="" width="22" height="22" loading="lazy"><span>Microsoft 365</span></li><li><img src="assets/logos/googleworkspace.png" alt="" width="22" height="22" loading="lazy"><span>Google Workspace</span></li></ul>
 </div></section>
 
 <section id="work"><div class="wrap">
-<p class="eyebrow">Selected work</p>
-<h2>Brand &amp; communications across three organisations</h2>
-<p class="lead">Five years of work for Aerospace New Zealand, Esri Australia and ChristchurchNZ, with Aerospace New Zealand as my main role. [Short intro to this body of work.]</p>
+<p class="eyebrow">Work</p>
+<h2>Selected work</h2>
+<p class="lead">Five years across a national industry body, a global software company and an economic development agency. A few highlights below.</p>
 <div class="grid">
-<button type="button" class="card project" data-project="nzas-2026" aria-haspopup="dialog"><img class="cover" src="assets/summit-2026/01-hero-thumb.jpg" srcset="assets/summit-2026/01-hero-thumb.jpg 480w, assets/summit-2026/01-hero.jpg 1600w" sizes="(max-width:800px) 100vw, 400px" alt="Summit stage screen with event branding and the sponsor wall" loading="lazy"><h3>New Zealand Aerospace Summit 2026</h3><p>[One-line description of your work on the 2026 Summit]</p><span class="tag">Aerospace New Zealand</span><span class="more">View project &rarr;</span></button>
-<button type="button" class="card project" data-project="nzas-2025" aria-haspopup="dialog"><img class="cover" src="assets/summit-2025/00-fireside-thumb.jpg" srcset="assets/summit-2025/00-fireside-thumb.jpg 480w, assets/summit-2025/00-fireside.jpg 1600w" sizes="(max-width:800px) 100vw, 400px" alt="Kayla Renner of Voyager Technologies on stage at the New Zealand Aerospace Summit 2025, beside a screen reading &#39;Invited speaker - fireside chat with Mark Rocket&#39;, with the sponsor wall behind" loading="lazy"><h3>New Zealand Aerospace Summit 2025</h3><p>Event branding, design and promotion for the summit.</p><span class="tag">Aerospace New Zealand</span><span class="more">View project &rarr;</span></button>
-<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>New Zealand Aerospace Summit 2024</h3><p>[One-line description]</p><span class="tag">Aerospace New Zealand</span></article>
-<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>New Zealand Aerospace Summit 2023</h3><p>[One-line description]</p><span class="tag">Aerospace New Zealand</span></article>
-<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>[Esri Australia project title]</h3><p>[One-line description]</p><span class="tag">Esri Australia</span></article>
-<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>[ChristchurchNZ project title]</h3><p>[One-line description]</p><span class="tag">ChristchurchNZ</span></article>
-<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>[Project title]</h3><p>[One-line description]</p><span class="tag">Aerospace New Zealand</span></article>
-<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>[Project title]</h3><p>[One-line description]</p><span class="tag">Aerospace New Zealand</span></article>
-<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>[Project title]</h3><p>[One-line description]</p><span class="tag">Aerospace New Zealand</span></article>
-<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>[Project title]</h3><p>[One-line description]</p><span class="tag">Aerospace New Zealand</span></article>
-<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>[Project title]</h3><p>[One-line description]</p><span class="tag">Esri Australia</span></article>
-<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>[Project title]</h3><p>[One-line description]</p><span class="tag">ChristchurchNZ</span></article>
+<button type="button" class="card project" data-project="esri-webinars" aria-haspopup="dialog"><h3>Esri Australia virtual events program</h3><p>I took over a webinar program averaging 20–30 attendees and rebuilt it end to end. It now averages ~110 per session, peaking at 200, with 206–310 registrations per webinar. I also scaled the approach to Esri teams in Singapore, Malaysia, Indonesia and Bangladesh.</p><span class="tag">Esri Australia · B2B events · Email</span><span class="more">View project &rarr;</span></button>
+<button type="button" class="card project" data-project="nzas-2026" aria-haspopup="dialog"><img class="cover" src="assets/summit-2026/01-hero-thumb.jpg" srcset="assets/summit-2026/01-hero-thumb.jpg 480w, assets/summit-2026/01-hero.jpg 1600w" sizes="(max-width:800px) 100vw, 400px" alt="Summit stage screen with event branding and the sponsor wall" loading="lazy"><h3>NZ Aerospace Summit 2026</h3><p>Campaign strategy and content for New Zealand's largest aerospace networking event (750+ attendees). The 2026 Summit set a ticket-revenue record.</p><span class="tag">Aerospace New Zealand · Campaign · Content</span><span class="more">View project &rarr;</span></button>
+<button type="button" class="card project" data-project="nzas-2023-2025" aria-haspopup="dialog"><img class="cover" src="assets/summit-2025/00-fireside-thumb.jpg" srcset="assets/summit-2025/00-fireside-thumb.jpg 480w, assets/summit-2025/00-fireside.jpg 1600w" sizes="(max-width:800px) 100vw, 400px" alt="Kayla Renner of Voyager Technologies on stage at the New Zealand Aerospace Summit 2025, beside a screen reading &#x27;Invited speaker - fireside chat with Mark Rocket&#x27;, with the sponsor wall behind" loading="lazy"><h3>NZ Aerospace Summit 2023–2025</h3><p>Three years leading the Summit's branding, design and national campaigns, with my own marketing budget. Attendance grew 20% year on year and has grown every year since 2023.</p><span class="tag">Aerospace New Zealand · Brand · Campaign</span><span class="more">View project &rarr;</span></button>
+<button type="button" class="card project" data-project="mark-rocket" aria-haspopup="dialog"><h3>First New Zealander in space</h3><p>Messaging and PR for Mark Rocket's 2025 Blue Origin flight. The job was to get the story told without it becoming a "rich people in space" pile-on. I also edited his flight footage and sent the Summit logo to space on a plate co-made with Christchurch startup KiwiFibre.</p><span class="tag">Client: Mark Rocket · PR · Video</span><span class="more">View project &rarr;</span></button>
+<button type="button" class="card project" data-project="protest-response" aria-haspopup="dialog"><h3>When protesters showed up</h3><p>Protesters targeted Summit sponsors and speakers over aerospace militarisation. Instead of going quiet, we issued releases and invited media to talk to attendees directly. The result was balanced coverage on 1News, RNZ, The Press and Stuff.</p><span class="tag">Aerospace New Zealand · Crisis comms</span><span class="more">View project &rarr;</span></button>
+<button type="button" class="card project" data-project="audience-growth" aria-haspopup="dialog"><h3>Building an audience for NZ aerospace</h3><p>I grew LinkedIn from 2,500 to 9,000+ followers in under two years and the email database by 58%, with open rates averaging ~55%. I ran five channels and later built an AI-assisted weekly workflow for news monitoring and LinkedIn content.</p><span class="tag">Aerospace New Zealand · Social · Email</span><span class="more">View project &rarr;</span></button>
+<button type="button" class="card project" data-project="ecosystem-map" aria-haspopup="dialog"><h3>Mapping New Zealand's aerospace industry</h3><p>I audited hundreds of NZ aerospace organisations against NASA's Technology Taxonomy and led updates to the ChristchurchNZ Aerospace Ecosystem Map, which informs regional strategy.</p><span class="tag">ChristchurchNZ · Research</span><span class="more">View project &rarr;</span></button>
 </div>
 </div></section>
 
 <section id="recognition"><div class="wrap">
 <p class="eyebrow">Recognition</p>
-<h2>Recognition</h2>
-<p class="lead">Grouped by organisation: Esri Australia, Aerospace New Zealand (one tile per year) and ChristchurchNZ.</p>
+<h2>Recognition &amp; press</h2>
 <div class="grid">
-<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>[Recognition title]</h3><p>[One-line description] · [link]</p><span class="tag">Esri Australia</span></article>
-<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>[Year 1]: [Recognition title]</h3><p>[One-line description] · [link]</p><span class="tag">Aerospace New Zealand</span></article>
-<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>[Year 2]: [Recognition title]</h3><p>[One-line description] · [link]</p><span class="tag">Aerospace New Zealand</span></article>
-<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>[Year 3]: [Recognition title]</h3><p>[One-line description] · [link]</p><span class="tag">Aerospace New Zealand</span></article>
-<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>[Year 4]: [Recognition title]</h3><p>[One-line description] · [link]</p><span class="tag">Aerospace New Zealand</span></article>
-<article class="card"><img class="cardimg" src="assets/recognition-smart-cities.jpg" alt="Smart Cities Validator programme winner" loading="lazy"><h3>Smart Cities Validator: winner</h3><p>I founded Oasis Aero and grew the team that was named Overall Winner of ChristchurchNZ's Smart City Challenge 2024, topping 17 ventures in the 10-week Validator. · <a href="https://www.scoop.co.nz/stories/AK2406/S00536/smart-city-challenge-2024-winners.htm" target="_blank" rel="noopener noreferrer">Read on Scoop</a></p><span class="tag">ChristchurchNZ</span></article>
+<article class="card"><img class="cardimg" src="assets/recognition-smart-cities.jpg" alt="Smart Cities Validator programme winner" loading="lazy"><h3>Smart Cities Validator: overall winner</h3><p>Co-founded Oasis Aero, named overall winner of ChristchurchNZ's 2024 Smart City Challenge out of 17 ventures in the 10-week Validator. · <a href="https://www.scoop.co.nz/stories/AK2406/S00536/smart-city-challenge-2024-winners.htm" target="_blank" rel="noopener noreferrer">Read on Scoop</a></p><span class="tag">ChristchurchNZ</span></article>
+<article class="card"><img class="cardimg" src="assets/recognition-uc-ones-to-watch.jpg" alt="University of Canterbury Ones to Watch feature" loading="lazy"><h3>University of Canterbury "Ones to Watch"</h3><p>Profiled in UC's 150th anniversary alumni showcase (Feb 2025) for Oasis Orbital Systems, which streamed live from near space to VR headsets. · <a href="https://www.canterbury.ac.nz/about-uc/our-story/150th/150th-alumni-showcase/ones-to-watch" target="_blank" rel="noopener noreferrer">View feature</a></p></article>
+<article class="card"><img class="cardimg" src="assets/recognition-balloon.jpg" alt="High-altitude balloon launch" loading="lazy"><h3>Edge of space, in the news</h3><p>Stuff covered our high-altitude balloon flight filming HD video from the edge of space. · <a href="https://www.stuff.co.nz/business/350488082/young-entrepreneur-filming-high-definition-videos-from-the-edge-of-space" target="_blank" rel="noopener noreferrer">Read on Stuff</a></p></article>
+<article class="card"><h3>Summit in the media</h3><p>Summit coverage I generated across 1News, RNZ, The Press and Stuff.</p></article>
+<article class="card"><h3>UCE Summer Startup Scholarship, 2021–22</h3><p>Selected for the University of Canterbury's 10-week startup programme and scholarship.</p></article>
+<article class="card"><h3>Royal Aeronautical Society Excellence Award nominee, 2014</h3></article>
 </div>
-<h3 class="subhead">Other recognition</h3>
-<div class="grid">
-<article class="card"><img class="cardimg" src="assets/recognition-uc-ones-to-watch.jpg" alt="University of Canterbury Ones to watch feature" loading="lazy"><h3>University of Canterbury "Ones to watch"</h3><p>Profiled (BCom 2022) in UC's 150th anniversary alumni showcase as founder of Oasis Orbital Systems, a startup using orbital live-streaming to let VR headset users experience the edge of space. · <a href="https://www.canterbury.ac.nz/about-uc/our-story/150th/150th-alumni-showcase/ones-to-watch" target="_blank" rel="noopener noreferrer">View feature</a></p></article>
-<article class="card"><img class="cardimg" src="assets/recognition-balloon.jpg" alt="High-altitude balloon launch" loading="lazy"><h3>High-altitude balloon in the news</h3><p>Stuff featured me as founder of my venture, filming high-definition video from the edge of space with a high-altitude balloon. · <a href="https://www.stuff.co.nz/business/350488082/young-entrepreneur-filming-high-definition-videos-from-the-edge-of-space" target="_blank" rel="noopener noreferrer">Read on Stuff</a></p></article>
-<article class="card"><h3>UC summer startup programme</h3><p>Took part in the UC Centre for Entrepreneurship's 10-week Summer Startup Programme and received the scholarship for the venture I founded. · <a href="https://www.canterbury.ac.nz/about-uc/our-structure/faculties/business-faculty/centre-for-entrepreneurship/summer-startup-programme" target="_blank" rel="noopener noreferrer">About the programme</a></p></article>
-</div>
-</div></section>
-
-<section id="video"><div class="wrap">
-<p class="eyebrow">Motion</p>
-<h2>Videos</h2>
-<div class="grid">
-<article class="card"><div class="ph video" role="img" aria-label="Video placeholder">Video placeholder</div><h3>[Video title]</h3><p>[One-line description]</p></article>
-<article class="card"><div class="ph video" role="img" aria-label="Video placeholder">Video placeholder</div><h3>[Video title]</h3><p>[One-line description]</p></article>
-<article class="card"><div class="ph video" role="img" aria-label="Video placeholder">Video placeholder</div><h3>[Video title]</h3><p>[One-line description]</p></article>
-</div>
-</div></section>
-
-<section id="creative" class="marquee-section" aria-labelledby="cw-h"><div class="wrap">
-<p class="eyebrow">More work</p>
-<h2 id="cw-h">Other creative work &amp; graphic design</h2>
-<div class="marquee"><ul class="marquee-track tiles"><li><div class="ph" role="img" aria-label="Design placeholder">[Creative work 1]</div></li><li><div class="ph" role="img" aria-label="Design placeholder">[Creative work 2]</div></li><li><div class="ph" role="img" aria-label="Design placeholder">[Creative work 3]</div></li><li><div class="ph" role="img" aria-label="Design placeholder">[Creative work 4]</div></li><li><div class="ph" role="img" aria-label="Design placeholder">[Creative work 5]</div></li><li><div class="ph" role="img" aria-label="Design placeholder">[Creative work 6]</div></li></ul><ul class="marquee-track tiles" aria-hidden="true"><li><div class="ph" >[Creative work 1]</div></li><li><div class="ph" >[Creative work 2]</div></li><li><div class="ph" >[Creative work 3]</div></li><li><div class="ph" >[Creative work 4]</div></li><li><div class="ph" >[Creative work 5]</div></li><li><div class="ph" >[Creative work 6]</div></li></ul></div>
 </div></section>
 
 <section id="projects"><div class="wrap">
-<p class="eyebrow">Projects</p>
-<h2>Other high-impact projects</h2>
+<p class="eyebrow">Side projects</p>
+<h2>Outside the day job</h2>
+<p class="lead">The things I build when no one's asked me to. They're why I'm comfortable around engineers.</p>
 <div class="grid">
-<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>[Rocket Lab?] campaign</h3><p>[Campaign name and one-line description. Confirm the organisation name.]</p><span class="tag">Campaign</span></article>
-<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>Edge-of-space balloon trips</h3><p>A balloon flight to near space that was featured on the news. [Add detail.]</p><span class="tag">Engineering · Media</span></article>
-<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>[Project 3: to be decided]</h3><p>[One-line description]</p><span class="tag">[Tag]</span></article>
-<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>Chips to the edge of space</h3><p>Sending a packet of chips to the edge of space. [Add detail.]</p><span class="tag">Stunt · Storytelling</span></article>
-<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>Radio coverage</h3><p>[Programme/station] coverage of [project]. [Add detail.]</p><span class="tag">Media</span></article>
-<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>Bandit Robotics airship</h3><p>An airship project. [Add detail.]</p><span class="tag">Concept design</span></article>
-<article class="card"><div class="ph" role="img" aria-label="Image placeholder">Image placeholder</div><h3>Other robots</h3><p>[Robot project names and one-line descriptions]</p><span class="tag">Robotics</span></article>
+<article class="card"><img class="cardimg" src="assets/recognition-balloon.jpg" alt="High-altitude balloon launch" loading="lazy"><h3>Camera above 100,000 ft</h3><p>With Oasis Aero, we flew a 360° camera on a high-altitude balloon above 100,000 ft, and got it covered by Stuff. The startup later pivoted to autonomous airships for powerline inspection.</p><span class="tag">Engineering · Media</span></article>
+<article class="card"><h3>CAD and product design</h3><p>I design and 3D-print my own products, from concept models to working parts.</p><span class="tag">CAD · Prototyping</span></article>
 </div>
 </div></section>
 
 <section id="skills"><div class="wrap">
-<p class="eyebrow">Skills &amp; tools</p>
-<h2>What I work with</h2>
-<p class="lead">The disciplines behind the work. Software I use is listed in the sidebar.</p>
+<p class="eyebrow">Skills</p>
+<h2>What I do</h2>
 <div class="skills">
-<div><h3>Graphic design</h3><p>Layout, print and digital assets</p></div>
-<div><h3>Branding</h3><p>Identity, guidelines, consistency</p></div>
-<div><h3>Communications</h3><p>Campaigns, content, messaging</p></div>
-<div><h3>Video</h3><p>Editing and motion for comms</p></div>
-<div><h3>CAD &amp; rapid prototyping</h3><p>Product modelling, prototyping and additive manufacturing</p></div>
+<div><h3>Campaigns &amp; strategy</h3><p>Planning, budgets, execution and reporting</p></div>
+<div><h3>Events</h3><p>Webinars, conferences and in-person events, end to end</p></div>
+<div><h3>PR &amp; media</h3><p>Press releases, executive messaging, crisis comms</p></div>
+<div><h3>Content &amp; copy</h3><p>Web, email, scripts, bylined articles</p></div>
+<div><h3>Brand &amp; design</h3><p>Identities, event branding, templates</p></div>
+<div><h3>Technical</h3><p>Aircraft engineering background, CAD, rapid prototyping</p></div>
 </div>
 </div></section>
 
 <section id="contact" class="contact"><div class="wrap">
 <p class="eyebrow">Contact</p>
-<h2>Let's work together</h2>
-<p class="lead">Open to freelance marketing, branding and design work. I'd love to hear what you're working on.</p>
+<h2>Let's talk</h2>
+<p class="lead">I'm looking for marketing and communications roles in aerospace, technology and innovation. I'm also open to the occasional freelance project.</p>
 <ul>
 <li>Email: <a href="mailto:mekdimtesfaye07@gmail.com">mekdimtesfaye07@gmail.com</a></li>
-<li>LinkedIn: <a href="#">[LinkedIn profile link]</a></li>
-<li>CV: <a href="#">[Download CV (PDF) coming]</a></li>
+<li>LinkedIn: <a href="https://www.linkedin.com/in/mekdim-tesfaye" target="_blank" rel="noopener noreferrer">linkedin.com/in/mekdim-tesfaye</a></li>
+<li>CV: <a href="#" aria-disabled="true">Download (PDF)</a></li>
 </ul>
 </div></section>
 </main>
 </div>
-<footer><div class="wrap">© 2026 Mekdim Tesfaye</div></footer>
+<footer><div class="wrap">© 2026 Mekdim Tesfaye · Gold Coast, Queensland</div></footer>
 <div class="pm" id="pm" hidden><div class="pm-backdrop" data-close></div><div class="pm-panel" role="dialog" aria-modal="true" aria-labelledby="pm-title"><button class="pm-close" type="button" aria-label="Close project details" data-close>&times;</button><div class="pm-gallery" id="pm-gallery"></div><div class="pm-text" id="pm-text"></div></div></div>
-<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Image viewer"><img id="lb-img" alt=""><button class="lb-prev" type="button" aria-label="Previous image">&#8249;</button><button class="lb-next" type="button" aria-label="Next image">&#8250;</button><button class="lb-close" type="button" aria-label="Close image viewer">&times;</button><span class="lb-count" id="lb-count"></span></div>
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Image viewer"><img id="lb-img" alt=""><button class="lb-prev" type="button" aria-label="Previous image">&#8249;</button><button class="lb-next" type="button" aria-label="Next image">&#8250;</button><button class="lb-close" type="button" aria-label="Close image viewer">&times;</button><span class="lb-cap" id="lb-cap"></span><span class="lb-count" id="lb-count"></span></div>
 <script type="application/json" id="projects-data">
 {
- "nzas-2026": {
-  "title": "New Zealand Aerospace Summit 2026",
-  "org": "Aerospace New Zealand",
-  "summary": "The 2026 Summit ran on 1\u20132 October 2026 at Te Pae Christchurch Convention Centre, under the theme \u201cLook up at global possibilities. Lean in for Aotearoa\u2019s future.\u201d [Add a sentence on your part in it.]",
-  "role": "[Your role on the 2026 Summit]",
-  "did": ["[Deliverable 1]","[Deliverable 2]","[Deliverable 3]"],
-  "tools": "[Tools used]",
-  "outcome": "[Outcome, e.g. results or feedback you can share]",
-  "images": [
-   {"src":"assets/summit-2026/01-hero.jpg","thumb":"assets/summit-2026/01-hero-thumb.jpg","alt":"Summit stage screen with event branding and the sponsor wall"}
+ "esri-webinars": {
+  "title": "Esri Australia virtual events program",
+  "org": "Esri Australia",
+  "brief": "Esri Australia's webinar program was averaging 20–30 attendees per session. I took it over to rebuild it end to end.",
+  "did": [
+   "Rebuilt the webinar program end to end",
+   "Lifted registrations to 206–310 per webinar",
+   "Scaled the approach to Esri teams in Singapore, Malaysia, Indonesia and Bangladesh"
   ],
-  "slots": ["[More 2026 visuals coming]"]
+  "outcome": "Attendance now averages ~110 per session, peaking at 200.",
+  "images": []
  },
- "nzas-2025": {
-  "title": "New Zealand Aerospace Summit 2025",
+ "nzas-2026": {
+  "title": "NZ Aerospace Summit 2026",
   "org": "Aerospace New Zealand",
-  "summary": "I designed the complete brand for the New Zealand Aerospace Summit 2025, the \u201cOpen Skies\u201d identity, and every graphic that carried it, from the stage screens to the speaker and exhibitor highlights. I also shaped the key messaging and promoted the summit to its target audiences.",
-  "audience": "Aerospace industry, innovators, investors, regulators, partners, supply chain and researchers, including domestic and international delegates.",
-  "brief": ["Capture New Zealand\u2019s \u201cOpen Skies\u201d theme, one of the country\u2019s key advantages","Balance aero and space","Keep a blue consistent with the Aerospace New Zealand brand"],
-  "role": "Marketing Specialist, Aerospace New Zealand \u00b7 Brand identity, design and promotion",
-  "did": ["Brand identity: the \u201cOpen Skies\u201d summit brand","All event graphics, including the Peter Beck speaker highlight and Dawn Aerospace exhibitor highlight","Landing page design",
-  "One-page event flyer (print)","Email banners","Social media content","Media kit for promotion","Key messaging and target-audience promotion"],
-  "tools": "[Tools used, e.g. Canva, Adobe Illustrator]",
-  "outcome": "[Outcome, e.g. results or feedback you can share]",
-  "note": "Event photography by others. My brand work appears on the stage screens and lectern.",
-  "slots":[],
+  "brief": "Campaign strategy and content for New Zealand's largest aerospace networking event (750+ attendees), held 1–2 October 2026 at Te Pae Christchurch Convention Centre.",
+  "did": [
+   "Set the campaign strategy for the 2026 Summit",
+   "Created the campaign content"
+  ],
+  "outcome": "The 2026 Summit set a ticket-revenue record.",
   "images": [
-   {"src":"assets/summit-2025/00-fireside.jpg","thumb":"assets/summit-2025/00-fireside-thumb.jpg","alt":"Kayla Renner of Voyager Technologies on stage at the New Zealand Aerospace Summit 2025, beside a screen reading 'Invited speaker - fireside chat with Mark Rocket', with the sponsor wall behind"},
-   {"src": "assets/summit-2025/00b-landing-page.jpg", "thumb": "assets/summit-2025/00b-landing-page-thumb.jpg", "alt": "Landing page design for the New Zealand Aerospace Summit 2025: Open Skies hero with the headline 'Leveraging New Zealand's Low Air Traffic and Rapid Regulatory Environment', event dates 7–8 October 2025 in Christchurch, sponsor logos, and Sponsor, Exhibit and Present sections"},
-   {"src": "assets/summit-2025/00c-flyer.jpg", "thumb": "assets/summit-2025/00c-flyer-thumb.jpg", "alt": "One-page print flyer for the New Zealand Aerospace Summit 2025 with Open Skies branding, location and dates (Ōtautahi Christchurch, 7–8 October 2025), supporter logos, six reasons to attend, and a QR code for early registration"},
-   {"src":"assets/summit-2025/02-lectern.jpg","thumb":"assets/summit-2025/02-lectern-thumb.jpg","alt":"Branded lectern in front of the Open Skies stage screen"},
-   {"src":"assets/summit-2025/03-venue.jpg","thumb":"assets/summit-2025/03-venue-thumb.jpg","alt":"Venue with summit branding on a large screen above the foyer"},
-   {"src":"assets/summit-2025/04-speaker-highlight.jpg","thumb":"assets/summit-2025/04-speaker-highlight-thumb.jpg","alt":"Speaker highlight social post for Peter Beck, CEO of Rocket Lab"},
-   {"src":"assets/summit-2025/05-exhibitor-highlight.jpg","thumb":"assets/summit-2025/05-exhibitor-highlight-thumb.jpg","alt":"Exhibitor highlight social post for Dawn Aerospace featuring the Aurora rocket plane"}
+   {
+    "src": "assets/summit-2026/01-hero.jpg",
+    "thumb": "assets/summit-2026/01-hero-thumb.jpg",
+    "alt": "Summit stage screen with event branding and the sponsor wall",
+    "caption": "The Summit stage, with event branding on screen and the sponsor wall."
+   }
   ]
+ },
+ "nzas-2023-2025": {
+  "title": "NZ Aerospace Summit 2023–2025",
+  "org": "Aerospace New Zealand",
+  "brief": "Lead the Summit's branding, design and national campaigns for three years, with my own marketing budget. For 2025, the brand had to capture New Zealand's “Open Skies” theme, balance aero and space, and keep a blue consistent with the Aerospace New Zealand brand.",
+  "did": [
+   "Led the Summit's branding, design and national campaigns, with my own marketing budget",
+   "Designed the 2025 “Open Skies” brand identity and all event graphics",
+   "Designed the landing page, one-page print flyer, email banners, social content and media kit",
+   "Shaped the key messaging and promoted the Summit to its target audiences"
+  ],
+  "outcome": "Attendance grew 20% year on year and has grown every year since 2023.",
+  "note": "Event photography by others. My brand work appears on the stage screens and lectern.",
+  "images": [
+   {
+    "src": "assets/summit-2025/00-fireside.jpg",
+    "thumb": "assets/summit-2025/00-fireside-thumb.jpg",
+    "alt": "Kayla Renner of Voyager Technologies on stage at the New Zealand Aerospace Summit 2025, beside a screen reading 'Invited speaker - fireside chat with Mark Rocket', with the sponsor wall behind",
+    "caption": "2025: fireside chat stage screen and sponsor wall."
+   },
+   {
+    "src": "assets/summit-2025/00b-landing-page.jpg",
+    "thumb": "assets/summit-2025/00b-landing-page-thumb.jpg",
+    "alt": "Landing page design for the New Zealand Aerospace Summit 2025: Open Skies hero with the headline 'Leveraging New Zealand's Low Air Traffic and Rapid Regulatory Environment', event dates 7–8 October 2025 in Christchurch, sponsor logos, and Sponsor, Exhibit and Present sections",
+    "caption": "2025 landing page design."
+   },
+   {
+    "src": "assets/summit-2025/00c-flyer.jpg",
+    "thumb": "assets/summit-2025/00c-flyer-thumb.jpg",
+    "alt": "One-page print flyer for the New Zealand Aerospace Summit 2025 with Open Skies branding, location and dates (Ōtautahi Christchurch, 7–8 October 2025), supporter logos, six reasons to attend, and a QR code for early registration",
+    "caption": "2025 one-page print flyer, with a QR code for early registration."
+   },
+   {
+    "src": "assets/summit-2025/02-lectern.jpg",
+    "thumb": "assets/summit-2025/02-lectern-thumb.jpg",
+    "alt": "Branded lectern in front of the Open Skies stage screen",
+    "caption": "Open Skies branding on the lectern and stage screen."
+   },
+   {
+    "src": "assets/summit-2025/04-speaker-highlight.jpg",
+    "thumb": "assets/summit-2025/04-speaker-highlight-thumb.jpg",
+    "alt": "Speaker highlight social post for Peter Beck, CEO of Rocket Lab",
+    "caption": "Speaker highlight post: Peter Beck, Rocket Lab."
+   },
+   {
+    "src": "assets/summit-2025/05-exhibitor-highlight.jpg",
+    "thumb": "assets/summit-2025/05-exhibitor-highlight-thumb.jpg",
+    "alt": "Exhibitor highlight social post for Dawn Aerospace featuring the Aurora rocket plane",
+    "caption": "Exhibitor highlight post: Dawn Aerospace."
+   }
+  ]
+ },
+ "mark-rocket": {
+  "title": "First New Zealander in space",
+  "org": "Client: Mark Rocket",
+  "brief": "Get the story of Mark Rocket's 2025 Blue Origin flight told without it becoming a “rich people in space” pile-on.",
+  "did": [
+   "Messaging and PR for the flight",
+   "Edited his flight footage",
+   "Sent the Summit logo to space on a plate co-made with Christchurch startup KiwiFibre"
+  ],
+  "outcome": "The story of the first New Zealander in space was told, and the Summit logo flew with him.",
+  "images": []
+ },
+ "protest-response": {
+  "title": "When protesters showed up",
+  "org": "Aerospace New Zealand",
+  "brief": "Protesters targeted Summit sponsors and speakers over aerospace militarisation. Instead of going quiet, we chose to respond.",
+  "did": [
+   "Issued press releases",
+   "Invited media to talk to attendees directly"
+  ],
+  "outcome": "Balanced coverage on 1News, RNZ, The Press and Stuff.",
+  "images": []
+ },
+ "audience-growth": {
+  "title": "Building an audience for NZ aerospace",
+  "org": "Aerospace New Zealand",
+  "brief": "Build an audience for New Zealand aerospace across Aerospace New Zealand's channels.",
+  "did": [
+   "Ran five channels",
+   "Grew the email database by 58%, with open rates averaging ~55%",
+   "Built an AI-assisted weekly workflow for news monitoring and LinkedIn content"
+  ],
+  "outcome": "LinkedIn grew from 2,500 to 9,000+ followers in under two years.",
+  "images": []
+ },
+ "ecosystem-map": {
+  "title": "Mapping New Zealand's aerospace industry",
+  "org": "ChristchurchNZ",
+  "brief": "Update the ChristchurchNZ Aerospace Ecosystem Map, which informs regional strategy.",
+  "did": [
+   "Audited hundreds of NZ aerospace organisations against NASA's Technology Taxonomy",
+   "Led updates to the ChristchurchNZ Aerospace Ecosystem Map"
+  ],
+  "outcome": "The updated map informs regional strategy.",
+  "images": []
  }
 }
 </script>
 <script>
 (()=>{const data=JSON.parse(document.getElementById('projects-data').textContent);
 const pm=document.getElementById('pm'),panel=pm.querySelector('.pm-panel'),gal=document.getElementById('pm-gallery'),txt=document.getElementById('pm-text');
-const lb=document.getElementById('lb'),lbImg=document.getElementById('lb-img'),lbCount=document.getElementById('lb-count');
+const lb=document.getElementById('lb'),lbImg=document.getElementById('lb-img'),lbCount=document.getElementById('lb-count'),lbCap=document.getElementById('lb-cap');
 const rm=matchMedia('(prefers-reduced-motion: reduce)');let opener=null,cur=null,idx=0,lbOpener=null;
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const focusables=el=>[...el.querySelectorAll('button,[href],[tabindex]:not([tabindex="-1"])')].filter(e=>!e.closest('[hidden]'));
 function trap(e,el){if(e.key!=='Tab')return;const f=focusables(el);if(!f.length)return;const a=f[0],z=f[f.length-1];if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}}
 function open(id,card){const p=data[id];if(!p)return;cur=p;opener=card;
-gal.innerHTML=p.images.map((im,i)=>`<button type="button" data-i="${i}" aria-label="Enlarge image ${i+1} of ${p.images.length}"><img src="${esc(im.thumb||im.src)}" alt="${esc(im.alt)}" loading="lazy"></button>`).join('')+(p.slots||[]).map(t=>`<div class="pm-slot">${esc(t)}</div>`).join('');
-txt.innerHTML=`<p class="eyebrow">${esc(p.org)}</p><h2 id="pm-title">${esc(p.title)}</h2><p>${esc(p.summary)}</p><dl>${p.brief?`<dt>Brief</dt><dd><ul>${p.brief.map(b=>`<li>${esc(b)}</li>`).join('')}</ul></dd>`:''}${p.audience?`<dt>Audience</dt><dd>${esc(p.audience)}</dd>`:''}<dt>My role</dt><dd>${esc(p.role)}</dd><dt>What I did</dt><dd><ul>${p.did.map(d=>`<li>${esc(d)}</li>`).join('')}</ul></dd><dt>Tools</dt><dd>${esc(p.tools)}</dd><dt>Outcome</dt><dd>${esc(p.outcome)}</dd></dl>${p.note?`<p class="pm-note">${esc(p.note)}</p>`:''}`;
+panel.classList.toggle('noimg',!p.images.length);gal.innerHTML=p.images.map((im,i)=>`<figure class="pm-fig"><button type="button" data-i="${i}" aria-label="Enlarge image ${i+1} of ${p.images.length}"><img src="${esc(im.thumb||im.src)}" alt="${esc(im.alt)}" loading="lazy"></button>${im.caption?`<figcaption>${esc(im.caption)}</figcaption>`:''}</figure>`).join('');
+txt.innerHTML=`<p class="eyebrow">${esc(p.org)}</p><h2 id="pm-title">${esc(p.title)}</h2><dl><dt>The brief</dt><dd>${esc(p.brief)}</dd><dt>What I did</dt><dd><ul>${p.did.map(d=>`<li>${esc(d)}</li>`).join('')}</ul></dd><dt>What happened</dt><dd>${esc(p.outcome)}</dd></dl>${p.note?`<p class="pm-note">${esc(p.note)}</p>`:''}`;
 pm.hidden=false;document.body.classList.add('modal-open');{const r=card.getBoundingClientRect(),q=panel.getBoundingClientRect();panel.style.setProperty('--ox',(r.left+r.width/2-q.left)+'px');panel.style.setProperty('--oy',(r.top+r.height/2-q.top)+'px')}panel.scrollTop=0;requestAnimationFrame(()=>requestAnimationFrame(()=>pm.classList.add('open')));pm.querySelector('.pm-close').focus()}
 function close(){pm.classList.remove('open');const done=()=>{pm.hidden=true;document.body.classList.remove('modal-open');opener&&opener.focus()};rm.matches?done():setTimeout(done,350)}
-function show(i){idx=(i+cur.images.length)%cur.images.length;const im=cur.images[idx];lbImg.src=im.src;lbImg.alt=im.alt;lbCount.textContent=`${idx+1} / ${cur.images.length}`}
+function show(i){idx=(i+cur.images.length)%cur.images.length;const im=cur.images[idx];lbImg.src=im.src;lbImg.alt=im.alt;lbCap.textContent=im.caption||'';lbCount.textContent=`${idx+1} / ${cur.images.length}`}
 function lbOpen(i){lbOpener=document.activeElement;show(i);lb.hidden=false;requestAnimationFrame(()=>lb.classList.add('open'));lb.querySelector('.lb-close').focus()}
 function lbClose(){lb.classList.remove('open');lb.hidden=true;lbOpener&&lbOpener.focus()}
 document.querySelectorAll('[data-project]').forEach(c=>c.addEventListener('click',()=>open(c.dataset.project,c)));
